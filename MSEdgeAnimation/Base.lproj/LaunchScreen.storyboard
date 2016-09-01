@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="i1U-rE-tRg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Dff-5d-2hn">
+            <objects>
+                <viewController id="i1U-rE-tRg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lmr-Dw-VOh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gpv-gh-OeO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wtd-LY-bVM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Album" translatesAutoresizingMaskIntoConstraints="NO" id="StB-0i-xzn">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="StB-0i-xzn" firstAttribute="top" secondItem="lmr-Dw-VOh" secondAttribute="bottom" id="IVd-CM-Ix8"/>
+                            <constraint firstItem="Gpv-gh-OeO" firstAttribute="top" secondItem="StB-0i-xzn" secondAttribute="bottom" id="JHt-mK-8y2"/>
+                            <constraint firstItem="StB-0i-xzn" firstAttribute="leading" secondItem="wtd-LY-bVM" secondAttribute="leading" id="tRK-0p-gYN"/>
+                            <constraint firstAttribute="trailing" secondItem="StB-0i-xzn" secondAttribute="trailing" id="vok-Uf-DUO"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ue9-6Z-4Yr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="213"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Album" width="445" height="629"/>
+    </resources>
+</document>

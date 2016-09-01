@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="523-jE-UfX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edge AnimationVC-->
+        <scene sceneID="3mb-mm-ZwP">
+            <objects>
+                <viewController id="523-jE-UfX" customClass="MSEdgeAnimationVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gkg-76-fUS"/>
+                        <viewControllerLayoutGuide type="bottom" id="47b-oD-JIv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="03O-eT-Xg7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="《 萤火の恋 》" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDX-gS-1mt">
+                                <rect key="frame" x="113" y="50" width="150" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lbw-3B-6uR">
+                                <rect key="frame" x="70" y="108" width="235" height="549"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fh3-oN-Rw6">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="549"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">给你
+整个黑夜和星空
+
+在孤寂的
+瞬间
+
+在之水之下
+惊惶
+
+在渺小、幻想的
+恋
+和支离破碎
+
+给你
+飞舞 繁星的梦</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EDX-gS-1mt" firstAttribute="centerX" secondItem="lbw-3B-6uR" secondAttribute="centerX" id="08h-lo-71s"/>
+                            <constraint firstItem="lbw-3B-6uR" firstAttribute="leading" secondItem="03O-eT-Xg7" secondAttribute="leading" constant="70" id="4Mj-Ip-OzG"/>
+                            <constraint firstItem="lbw-3B-6uR" firstAttribute="top" secondItem="EDX-gS-1mt" secondAttribute="bottom" constant="30" id="4qh-gJ-Lt1"/>
+                            <constraint firstItem="lbw-3B-6uR" firstAttribute="centerX" secondItem="03O-eT-Xg7" secondAttribute="centerX" id="IKa-YP-Dfw"/>
+                            <constraint firstItem="EDX-gS-1mt" firstAttribute="top" secondItem="gkg-76-fUS" secondAttribute="bottom" constant="30" id="IrQ-Ce-Lqw"/>
+                            <constraint firstItem="lbw-3B-6uR" firstAttribute="leading" secondItem="03O-eT-Xg7" secondAttribute="leadingMargin" constant="47" id="TaF-64-vCL"/>
+                            <constraint firstItem="lbw-3B-6uR" firstAttribute="centerX" secondItem="03O-eT-Xg7" secondAttribute="centerX" id="mhP-Ez-pn5"/>
+                            <constraint firstItem="EDX-gS-1mt" firstAttribute="centerX" secondItem="03O-eT-Xg7" secondAttribute="centerX" id="pPO-aZ-9Qx"/>
+                            <constraint firstItem="47b-oD-JIv" firstAttribute="top" secondItem="lbw-3B-6uR" secondAttribute="bottom" constant="10" id="soS-e7-90o"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pPO-aZ-9Qx"/>
+                                <exclude reference="mhP-Ez-pn5"/>
+                                <exclude reference="TaF-64-vCL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTv-qE-ofA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.5" y="322.5"/>
+        </scene>
+    </scenes>
+</document>
